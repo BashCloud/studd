@@ -93,5 +93,11 @@ export default {
 .content--wrap{
   background-color: #f5f5f5;
 }
+.footer span{
+  width: 100%;
+  color: #999;
+  text-align: center;
+  padding: 20px 0px 10px;
+}
 </style>
 

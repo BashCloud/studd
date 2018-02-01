@@ -18,7 +18,7 @@
             <p> Full-stack Developer | UX-UI Designer </p>
             </div>
              </v-flex>
-             <v-flex md4 xs12>
+             <v-flex md4 xs12 style="color:#575757;">
                 <v-list dense>
                     <v-list-tile v-for="info in infos" :key="info.title">
                         <v-list-tile-action>
@@ -32,10 +32,11 @@
              </v-flex>
                 </v-layout>
           </v-card-text>
+          <div class="userRank"> #524 </div>
         </v-card>
         
         <v-card class="Card elevation-7" >
-          <v-card-text style="height: 400px;"></v-card-text>
+          <v-card-text style="height: 200px;"></v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
@@ -111,5 +112,16 @@ export default {
 }
 .list__tile__action{
     min-width: 36px !important;
+}
+.userRank{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #d92c64;
+    padding: 10px 20px 8px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px 0px 0px;
 }
 </style>
