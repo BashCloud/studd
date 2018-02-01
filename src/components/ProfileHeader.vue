@@ -58,9 +58,6 @@ export default {
     padding-left: 20px;
     color: #575757;
 }
-.list__tile__action{
-    min-width: 36px !important;
-}
 .userRank{
     position: absolute;
     bottom: 0px;
@@ -78,7 +75,10 @@ export default {
 .userRank:hover{
     background-color: #EB7B27;
 }
-.list__tile{
+.card0 .list__tile__action{
+    min-width: 36px !important;
+}
+.card0 .list__tile{
     color: #797979 !important;
     height: 28px !important;
     user-select: text !important;

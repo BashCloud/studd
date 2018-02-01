@@ -7,15 +7,15 @@
     <v-layout row>
       <v-flex sm8 xs10 offset-sm2 offset-xs1>
           <profile-heder /> 
-            <v-layout row>
-                <v-flex sm8 xs12>
+            <v-layout row wrap>
+                <v-flex xs12 md8>
                     <profile-experience />
                 </v-flex>
-                <v-flex sm4 xs12>
-            <v-card class="Card elevation-7" >
-            <v-card-text style="height: 200px;"></v-card-text>
-            </v-card>
-        </v-flex>
+                <v-flex xs12 md4>
+                    <v-card class="Card elevation-7" >
+                    <v-card-text style="height: 200px;"></v-card-text>
+                    </v-card>
+                </v-flex>
             </v-layout>
       </v-flex>
       
@@ -70,6 +70,13 @@ export default {
   .toolbar__extension{
       height: 150px !important;
   }
+  .Card .list{
+      padding: 0px !important;
+  }
+  .Card .list__tile__title{
+      font-weight: 600;
+      color: #373737;
+  }
   .Card{ 
       margin-top: 30px;
       border-left: 8px solid #d92c64;
@@ -77,9 +84,7 @@ export default {
   .Card:hover{
       border-color: #EB7B27;
   }
-  .cardLeft{
-      margin-right: 20px;
-  }
+
   .cardHeading{
       color: #373737;
   }
@@ -89,5 +94,10 @@ export default {
     position: absolute;
     left: calc( 50% - 55px);
     top: 20px;
+}
+@media only screen and (min-width: 960px) {
+  .cardLeft{
+      margin-right: 20px;
+  }
 }
 </style>
