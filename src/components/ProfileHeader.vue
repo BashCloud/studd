@@ -73,6 +73,7 @@ export default {
     border-radius: 20px 0px 0px;
     transition: 500ms all ease-in-out;
     font-weight: 700;
+    user-select: none;
 }
 .userRank:hover{
     background-color: #EB7B27;
@@ -80,6 +81,7 @@ export default {
 .list__tile{
     color: #797979 !important;
     height: 28px !important;
+    user-select: text !important;
 }
 @media only screen and (max-width: 650px) {
     .avatar{
