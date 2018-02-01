@@ -1,9 +1,13 @@
 <template>
     <v-card class="Card elevation-7 cardLeft" >
-        <v-card-text>
-            <h3 class="cardHeading"> EXPERIENCE: </h3>
-        </v-card-text>
+        <v-expansion-panel>
+    <v-expansion-panel-content>
+      <div slot="header">
+          <h3 class="cardHeading"> EXPERIENCE: </h3>
+      </div>
+      <v-card>
         <v-list two-line dense>
+           <div class="timeline"></div>
           <div class="exprItem" v-for="item in items" :key="item.title">
             <v-list-tile avatar >
                 <div class="exprIcon" v-html="item.key"></div>
@@ -14,6 +18,24 @@
             </v-list-tile>
           </div>
         </v-list>
+      </v-card>
+    </v-expansion-panel-content>
+  </v-expansion-panel>
+        <!-- <v-card-text>
+            <h3 class="cardHeading"> EXPERIENCE: </h3>
+        </v-card-text> -->
+        <!-- <v-list two-line dense>
+           <div class="timeline"></div>
+          <div class="exprItem" v-for="item in items" :key="item.title">
+            <v-list-tile avatar >
+                <div class="exprIcon" v-html="item.key"></div>
+              <v-list-tile-content style="padding-left:10px;">
+                <v-list-tile-title v-html="item.title"></v-list-tile-title>
+                <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </div>
+        </v-list> -->
         
     </v-card>
 </template>
@@ -49,7 +71,7 @@
     cursor: pointer;
 }
 .exprItem:hover{
-    background-color: #eee;
+    background-color: #ddd;
 }
 .exprIcon{
     min-height: 24px;

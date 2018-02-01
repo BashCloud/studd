@@ -17,6 +17,7 @@
                     </v-card>
                 </v-flex>
             </v-layout>
+              
       </v-flex>
       
     </v-layout>
@@ -94,6 +95,18 @@ export default {
     position: absolute;
     left: calc( 50% - 55px);
     top: 20px;
+}
+
+.timeline{
+    height: calc( 100% - 40px );
+    border: 2px solid #d92c64;
+    position: absolute;
+    top: 20px;
+    left: 31px;
+    z-index: 0;
+}
+ul.expansion-panel{
+    box-shadow: unset !important;
 }
 @media only screen and (min-width: 960px) {
   .cardLeft{
