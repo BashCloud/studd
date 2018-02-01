@@ -51,9 +51,9 @@ export default {
     data () {
       return {
         infos: [
+            { title: '+91-9817225332', icon: 'phone' },
           { title: 'Pulkit.cloud@gmail.com', icon: 'mail_outline' },
-          { title: '+91-9817225332', icon: 'phone' },
-          { title: 'bashcloud.github.io', icon: 'http' },
+          { title: 'BashCloud.github.io/', icon: 'http' },
           { title: '138-C, Subhash Nagar, Roorkee', icon: 'location_on' }
         ]
       }
