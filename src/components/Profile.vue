@@ -11,7 +11,7 @@
               <v-layout row wrap>
             <v-flex md8 xs12>
             <v-avatar size="120px" class="elevation-5">
-             <img id="userPic" src="../assets/user.png" class="elevation-5" alt="Pulkit">
+             <img src="../assets/user.png" class="elevation-5" alt="Pulkit">
             </v-avatar>
             <div class="userMains">
             <h1> Pulkit Aggarwal </h1>
@@ -32,7 +32,10 @@
              </v-flex>
                 </v-layout>
           </v-card-text>
-          <div class="userRank"> #524 </div>
+          
+          <div class="userRank" title="Studd Rank"> # 524 
+          </div>
+          
         </v-card>
         
         <v-card class="Card elevation-7" >
@@ -50,6 +53,7 @@ export default {
         infos: [
           { title: 'Pulkit.cloud@gmail.com', icon: 'mail_outline' },
           { title: '+91-9817225332', icon: 'phone' },
+          { title: 'bashcloud.github.io', icon: 'http' },
           { title: '138-C, Subhash Nagar, Roorkee', icon: 'location_on' }
         ]
       }
@@ -118,10 +122,28 @@ export default {
     bottom: 0px;
     right: 0px;
     background-color: #d92c64;
-    padding: 10px 20px 8px;
+    padding: 8px 20px 5px;
     text-align: center;
     color: #fff;
     cursor: pointer;
     border-radius: 20px 0px 0px;
+    transition: 500ms all ease-in-out;
+    font-weight: 700;
+}
+.userRank:hover{
+    background-color: #EB7B27;
+}
+.list__tile{
+    color: #797979 !important;
+    height: 28px !important;
+}
+@media only screen and (max-width: 650px) {
+    .avatar{
+        margin-left: calc( 50% - 60px);
+    }    
+    .userMains{
+        width: 100%;
+        text-align: center;
+    }
 }
 </style>

@@ -95,7 +95,7 @@ export default {
 }
 .footer span{
   width: 100%;
-  color: #999;
+  color: #575757;
   text-align: center;
   padding: 20px 0px 10px;
 }
