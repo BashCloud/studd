@@ -2,6 +2,7 @@
   <v-card color="grey lighten-5" flat>
     <v-toolbar dark id="profileBar" extended>
       <v-toolbar-side-icon></v-toolbar-side-icon>
+          <img id="mainLogo" src="../assets/Studd_logo.png" />
     </v-toolbar>
     <v-layout row>
       <v-flex sm8 xs10 offset-sm2 offset-xs1>
@@ -136,6 +137,12 @@ export default {
 .list__tile{
     color: #797979 !important;
     height: 28px !important;
+}
+#mainLogo{
+    height: 48px;
+    position: absolute;
+    left: calc( 50% - 55px);
+    top: 20px;
 }
 @media only screen and (max-width: 650px) {
     .avatar{
