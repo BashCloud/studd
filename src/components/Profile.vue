@@ -3,12 +3,18 @@
     <v-toolbar dark id="profileBar" extended>
       <v-toolbar-side-icon></v-toolbar-side-icon>
           <img id="mainLogo" src="../assets/Studd_logo.png" />
+          <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
     </v-toolbar>
     <v-layout row>
       <v-flex sm8 xs10 offset-sm2 offset-xs1>
           <profile-heder /> 
             <v-layout row wrap>
                 <v-flex xs12 md8>
+                    
+                    <profile-eduction />
                     <profile-experience />
                 </v-flex>
                 <v-flex xs12 md4>
@@ -16,6 +22,7 @@
                     <v-card-text style="height: 200px;"></v-card-text>
                     </v-card>
                 </v-flex>
+                
             </v-layout>
               
       </v-flex>
@@ -27,9 +34,10 @@
 <script>
 import ProfileHeder from "./ProfileHeader";
 import ProfileExperience from "./ProfileExperience";
+import ProfileEduction from "./ProfileEduction";
 export default {
     components:{
-        ProfileHeder,ProfileExperience
+        ProfileHeder,ProfileExperience,ProfileEduction
     },
 }
 </script>
@@ -77,17 +85,34 @@ export default {
   .Card .list__tile__title{
       font-weight: 600;
       color: #373737;
+      display: flex;
+    justify-content: space-between;
   }
   .Card{ 
       margin-top: 30px;
       border-left: 8px solid #d92c64;
+      transition: 300ms all ease-in-out; 
   }
   .Card:hover{
-      border-color: #EB7B27;
+      /* background-color: #d92c64; */
+      border-left: 8px solid #EB7B27;
   }
 
   .cardHeading{
       color: #373737;
+  }
+  .listTitle2{
+      font-weight: 300;
+      padding-left: 10px;
+  }
+  .listDuration{
+      /* background-color: #fff; */
+    font-size: 10px;
+    font-style: italic;
+    padding: 0px 10px;
+    /* position: absolute;
+    right: 10px; */
+    font-weight: 300;
   }
 
 #mainLogo{
@@ -107,6 +132,11 @@ export default {
 }
 ul.expansion-panel{
     box-shadow: unset !important;
+}
+.expansion-panel__container{
+    flex: initial !important;
+    background-color: transparent !important;
+    width: 100%;
 }
 @media only screen and (min-width: 960px) {
   .cardLeft{
