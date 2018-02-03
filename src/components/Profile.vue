@@ -16,6 +16,7 @@
                     
                     <profile-eduction />
                     <profile-experience />
+                    <profile-vol-experience />
                 </v-flex>
                 <v-flex xs12 md4>
                     <profile-skills />
@@ -37,9 +38,10 @@ import ProfileHeder from "./ProfileHeader";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEduction from "./ProfileEduction";
 import ProfileSkills from "./ProfileSkills";
+import ProfileVolExperience from "./ProfileVolExperience";
 export default {
     components:{
-        ProfileHeder,ProfileExperience,ProfileEduction, ProfileSkills,
+        ProfileHeder,ProfileExperience,ProfileEduction, ProfileSkills, ProfileVolExperience,
     },
 }
 </script>
