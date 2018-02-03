@@ -53,11 +53,7 @@
             title2: '| Web-master',
             subtitle: 'Jaypee University of Information Technology, Waknaghat',
             duration: "(Sept 16 – June 17)"
-          },
-          {
-            key: '+',
-            title: 'Add new'
-          },
+          }
         ]
       }
     }
