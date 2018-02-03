@@ -25,6 +25,7 @@
           { title: 'Jvascript', value: '65' },
           { title: 'AngulrJS', value: '45' },
           { title: 'VueJS', value: '75' },
+          { title: 'PhoneGap', value: '55' },
           { title: 'Php', value: '35' },
           { title: 'Bootstrap', value: '65' },          
           { title: 'HTML5', value: '95' },

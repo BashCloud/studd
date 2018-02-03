@@ -20,6 +20,7 @@
                 </v-flex>
                 <v-flex xs12 md4>
                     <profile-skills />
+                    <profile-awards />
                     <v-card class="Card elevation-7" >
                     <v-card-text style="height: 200px;"></v-card-text>
                     </v-card>
@@ -39,9 +40,10 @@ import ProfileExperience from "./ProfileExperience";
 import ProfileEduction from "./ProfileEduction";
 import ProfileSkills from "./ProfileSkills";
 import ProfileVolExperience from "./ProfileVolExperience";
+import ProfileAwards from "./ProfileAwards";
 export default {
     components:{
-        ProfileHeder,ProfileExperience,ProfileEduction, ProfileSkills, ProfileVolExperience,
+        ProfileHeder,ProfileExperience,ProfileEduction, ProfileSkills, ProfileVolExperience, ProfileAwards,
     },
 }
 </script>
