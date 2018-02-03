@@ -3,7 +3,7 @@
         <v-card-text>
             <v-layout row wrap>
         <v-flex md8 xs12>
-        <v-avatar size="120px" class="elevation-5">
+        <v-avatar size="120px" class="elevation-5" v-ripple>
             <img src="../assets/user.png" class="elevation-5" alt="Pulkit">
         </v-avatar>
         <div class="userMains">
@@ -25,7 +25,7 @@
             </v-flex>
             </v-layout>
         </v-card-text>
-        <div class="userRank" title="Studd Rank"> # 524 </div>
+        <div class="userRank" title="Studd Rank" v-ripple> # 524 </div>
     </v-card>
 </template>
 

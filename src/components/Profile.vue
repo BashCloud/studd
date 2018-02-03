@@ -1,6 +1,6 @@
 <template>
   <v-card color="grey lighten-4" flat>
-    <v-toolbar dark id="profileBar" extended>
+    <v-toolbar dark id="profileBar" extended >
       <v-toolbar-side-icon></v-toolbar-side-icon>
           <img id="mainLogo" src="../assets/Studd_logo.png" />
           <v-spacer></v-spacer>
@@ -18,6 +18,7 @@
                     <profile-experience />
                 </v-flex>
                 <v-flex xs12 md4>
+                    <profile-skills />
                     <v-card class="Card elevation-7" >
                     <v-card-text style="height: 200px;"></v-card-text>
                     </v-card>
@@ -35,9 +36,10 @@
 import ProfileHeder from "./ProfileHeader";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEduction from "./ProfileEduction";
+import ProfileSkills from "./ProfileSkills";
 export default {
     components:{
-        ProfileHeder,ProfileExperience,ProfileEduction
+        ProfileHeder,ProfileExperience,ProfileEduction, ProfileSkills,
     },
 }
 </script>
@@ -106,12 +108,9 @@ export default {
       padding-left: 10px;
   }
   .listDuration{
-      /* background-color: #fff; */
     font-size: 10px;
     font-style: italic;
     padding: 0px 10px;
-    /* position: absolute;
-    right: 10px; */
     font-weight: 300;
   }
 
