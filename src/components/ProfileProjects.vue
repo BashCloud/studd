@@ -1,7 +1,7 @@
 <template>
   <v-card class="Card elevation-7" >
     <v-expansion-panel expand focusable>
-      <v-expansion-panel-content ripple :value="true">
+      <v-expansion-panel-content ripple>
         <div slot="header"> 
           <h3 class="cardHeading"> Major Projects: </h3>
         </div>

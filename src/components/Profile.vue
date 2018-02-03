@@ -5,7 +5,7 @@
           <img id="mainLogo" src="../assets/Studd_logo.png" />
           <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon>more_vert</v-icon>
+        <v-icon>settings</v-icon>
       </v-btn>
     </v-toolbar>
     <v-layout row>
