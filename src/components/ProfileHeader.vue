@@ -34,10 +34,10 @@ export default {
     data () {
       return {
         infos: [
-          { title: '+91-9817225332', icon: 'phone' },
-          { title: 'BashCloud.github.io/', icon: 'http' },
-          { title: 'Pulkit.cloud@gmail.com', icon: 'mail_outline' },
-          { title: '138-C, Subhash Nagar, Roorkee', icon: 'location_on' }
+          // { title: '+91-9817225332', icon: 'phone' },
+          // { title: 'BashCloud.github.io/', icon: 'http' },
+          // { title: 'Pulkit.cloud@gmail.com', icon: 'mail_outline' },
+          // { title: '138-C, Subhash Nagar, Roorkee', icon: 'location_on' }
         ]
       }
     }
